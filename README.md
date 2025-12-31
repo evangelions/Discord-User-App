@@ -67,7 +67,7 @@ Discord's Terms of Service prohibit deceptive automation or impersonation that c
    BOT_TOKEN=your_actual_bot_token_here
 
 3. Open `main.py` in a text editor and find this line:  
-```python
+``python
 AUTHORIZED_OWNER_ID = 123456789012345678  # ← CHANGE THIS TO YOUR USER ID
 
 Replace the number with your own Discord user ID:  In Discord: Settings → Advanced → Enable Developer Mode  
