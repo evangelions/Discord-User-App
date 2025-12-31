@@ -101,7 +101,7 @@ The bot will automatically create a webhook named "ForwardBot" in each channel w
 After using !on, every message you send that does not start with ! will be instantly deleted and resent as a clean message (with your name, avatar, and attachments). as an App
 For the Owner Only:  !adduser <user_id> → Adds a new user
 
-Example:  
+## Example:  
 
 !adduser 987654321098765432
 
