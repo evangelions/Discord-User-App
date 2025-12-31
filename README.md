@@ -53,7 +53,7 @@ Discord's Terms of Service prohibit deceptive automation or impersonation that c
    git clone https://github.com/evangelions/Discord-User-App
    cd discord-forward-bot
 
-2. Install required packages:  
+3. Install required packages:  
 
    pip install -r requirements.txt
 
