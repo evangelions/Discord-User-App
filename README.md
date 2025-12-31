@@ -50,7 +50,7 @@ Discord's Terms of Service prohibit deceptive automation or impersonation that c
 **Step 3: Download and Prepare the Code**  
 1. Clone or download this repository:  
 
-   git clone https://github.com/YOUR_USERNAME/discord-forward-bot.git
+   git clone https://github.com/evangelions/Discord-User-App
    cd discord-forward-bot
 
 2. Install required packages:  
