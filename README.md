@@ -1,17 +1,15 @@
 # Discord-User-App
 script to replace your own messages with an App version of yourself
 
-# Discord Forward Bot
 
-A private Discord bot for personal or small servers.  
-It allows authorized users to send **clean messages**: the bot instantly deletes the original message and resends it via a webhook using the user's exact display name, avatar, and content (including multiple attachments). The result looks like a completely normal message with no bot trace.
+A Discord bot for your server.  
+It allows authorized users to send **App messages**: the bot instantly deletes the original message and resends it via a webhook using the user's exact display name, avatar, and content (including multiple attachments). The result looks like a message sent by an App version of you.
 
-Perfect for keeping chat tidy or private utility use in servers you control.
 
 **Important Warning**  
 This bot deletes messages and uses webhooks to mirror user messages.  
 Use **only** in servers where **all members consent** and you are the admin/owner.  
-Discord's Terms of Service prohibit deceptive automation or impersonation that could harm others. Misuse (e.g., evading moderation, harassment) may result in your bot or account being restricted/banned. Deploy responsibly.
+Discord's Terms of Service prohibit deceptive automation or impersonation that could harm others. Misuse (e.g., evading moderation, harassment) may result in your bot or account being restricted/banned. use responsibly.
 
 ## Features
 
