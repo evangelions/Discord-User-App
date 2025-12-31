@@ -55,16 +55,13 @@ Discord's Terms of Service prohibit deceptive automation or impersonation that c
 
    pip install -r requirements.txt
 
-**Step 4: Configure Your Secrets and Owner ID**  
-1. Create the `.env` file:  
+**Step 4: Configure Your Secrets and Owner ID**
 
-   cp .env.example .env
-
-2. Open `.env` in a text editor and replace the placeholder with your bot token:  
+1. Open `.env` in a text editor and replace the placeholder with your bot token:  
 
    BOT_TOKEN=your_actual_bot_token_here
 
-3. Open `main.py` in a text editor and find this line:  
+2. Open `main.py` in a text editor and find this line:  
 ```python
 AUTHORIZED_OWNER_ID = 123456789012345678  # ← CHANGE THIS TO YOUR USER ID
 ```
@@ -73,6 +70,7 @@ AUTHORIZED_OWNER_ID = 123456789012345678  # ← CHANGE THIS TO YOUR USER ID
 Replace the number with your own Discord user ID:  In Discord: Settings → Advanced → Enable Developer Mode  
 Right-click your own username → Copy User ID  
 Paste that number here and save the file
+
 
 ## Step 5: Run the Bot**
 
