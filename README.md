@@ -76,23 +76,31 @@ Replace the number with your own Discord user ID:  In Discord: Settings → Adva
 Right-click your own username → Copy User ID  
 Paste that number here and save the file
 
-Step 5: Run the Bot  In your terminal, run:  
+## Step 5: Run the Bot**
+
+In your terminal, run:  
 
 python main.py
 
 You should see:  
 
-Bot is ready! Logged in as YourBotName#1234
+Bot is ready! Logged in as YourBotName
 
 The bot is now online!
 
-Step 6: Verify Permissions  In your server, ensure the bot's role has: Manage Webhooks, Manage Messages, Send Messages, Attach Files, Read Message History, and View Channels  
+## Step 6: Verify Permissions**
+
+In your server, ensure the bot's role has: Manage Webhooks, Manage Messages, Send Messages, Attach Files, Read Message History, and View Channels  
 The bot will automatically create a webhook named "ForwardBot" in each channel when first needed
 
-How to Use the Bot (Command Prefix: !)For Any Authorized User:  !on → Turns forwarding ON (bot replies: "Bot is now ON for you!")  
+## How to Use the Bot**
+
+(Command Prefix: !) For Any Authorized User:  !on → Turns forwarding ON (bot replies: "Bot is now ON for you!")  
 !off → Turns forwarding OFF (bot replies: "Bot is now OFF for you!")
 
-After using !on, every message you send that does not start with ! will be instantly deleted and resent as a clean message (with your name, avatar, and attachments).For the Owner Only:  !adduser <user_id> → Adds a new user
+After using !on, every message you send that does not start with ! will be instantly deleted and resent as a clean message (with your name, avatar, and attachments). as an App
+For the Owner Only:  !adduser <user_id> → Adds a new user
+
 Example:  
 
 !adduser 987654321098765432
@@ -101,13 +109,18 @@ Example:
 The bot will confirm the user was added. Added users are saved permanently.
 
 Customization (Optional)
-Change the command prefix by editing this line in main.py:  python
-
+Change the command prefix by editing this line in main.py:
+```
 bot = commands.Bot(command_prefix='!', intents=intents)
+```
 
-Replace '!' with your preferred prefix (e.g., '.', '~', 'fwd ').Troubleshooting  Bot not responding? → Check console errors, verify Message Content Intent and token  
+Replace '!' with your preferred prefix (e.g., '.', '~', etc..). 
+
+## Troubleshooting
+
+Bot not responding? → Check console errors, verify Message Content Intent and token  
 Permission errors? → Double-check bot role/channel permissions  
-Messages not forwarding? → Confirm you used !on and are authorized  
+Messages not forwarding? → Confirm you used command and are authorized  
 Attachments failing? → Ensure "Attach Files" permission is enabled
 
 Enjoy!
