@@ -67,7 +67,8 @@ AUTHORIZED_OWNER_ID = 123456789012345678  # ← CHANGE THIS TO YOUR USER ID
 ```
 
 
-Replace the number with your own Discord user ID:  In Discord: Settings → Advanced → Enable Developer Mode  
+Replace the number with your own Discord user ID:  
+In Discord: Settings → Advanced → Enable Developer Mode  
 Right-click your own username → Copy User ID  
 Paste that number here and save the file
 
