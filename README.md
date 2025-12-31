@@ -120,4 +120,4 @@ Permission errors? → Double-check bot role/channel permissions
 Messages not forwarding? → Confirm you used command and are authorized  
 Attachments failing? → Ensure "Attach Files" permission is enabled
 
-Enjoy!
+# Enjoy!
