@@ -73,7 +73,7 @@ Right-click your own username → Copy User ID
 Paste that number here and save the file
 
 
-## Step 5: Run the Bot**
+## Step 5: Run the Bot
 
 In your terminal, run:  
 
@@ -85,12 +85,12 @@ Bot is ready! Logged in as YourBotName
 
 The bot is now online!
 
-## Step 6: Verify Permissions**
+## Step 6: Verify Permissions
 
 In your server, ensure the bot's role has: Manage Webhooks, Manage Messages, Send Messages, Attach Files, Read Message History, and View Channels  
 The bot will automatically create a webhook named "ForwardBot" in each channel when first needed
 
-## How to Use the Bot**
+## How to Use the Bot
 
 (Command Prefix: !) For Any Authorized User:  !on → Turns forwarding ON (bot replies: "Bot is now ON for you!")  
 !off → Turns forwarding OFF (bot replies: "Bot is now OFF for you!")
