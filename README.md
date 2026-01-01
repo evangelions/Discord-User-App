@@ -1,9 +1,8 @@
 # Discord-User-App
-script to replace your own messages with an App version of yourself
 
+Script to replace your own messages with an App version of yourself.
+It allows authorized users to send App messages: the bot instantly deletes the original message and resends it via a webhook using the user's exact display name, avatar, and content (including multiple attachments). The result looks like a message sent by an "App" version of you.
 
-A Discord bot for your server.  
-It allows authorized users to send **App messages**: the bot instantly deletes the original message and resends it via a webhook using the user's exact display name, avatar, and content (including multiple attachments). The result looks like a message sent by an App version of you.
 
 
 **Important Warning**  
@@ -13,12 +12,15 @@ Discord's Terms of Service prohibit deceptive automation or impersonation that c
 
 ## Features
 
-- Owner-only authorization system (`!adduser`)
-- Per-user toggle (`!on` / `!off`)
+- Owner-only authorization system (!adduser, !remove, !listusers)
+- Owner-only command to change the bot's prefix (!setprefix)
+- Per-user toggle (!on / !off)
 - Supports text + multiple attachments
-- Authorized users saved permanently (`authorized_users.json`)
+- Authorized users saved permanently (authorized_users.json)
+- Bot prefix saved permanently (bot_config.json)
 - Automatic webhook creation/reuse
 - Clean error messages and console logging
+
 
 ## Setup & Usage Guide
 
@@ -75,28 +77,52 @@ Paste that number here and save the file
 
 ## Step 5: Run the Bot
 
-In your terminal, run:  
+In your terminal,
 
-python main.py
+run:  python main.py
 
-You should see:  
-
-Bot is ready! Logged in as YourBotName
+You should see:  Bot is ready! Logged in as YourBotName
 
 The bot is now online!
 
 ## Step 6: Verify Permissions
 
-In your server, ensure the bot's role has: Manage Webhooks, Manage Messages, Send Messages, Attach Files, Read Message History, and View Channels  
-The bot will automatically create a webhook named "ForwardBot" in each channel when first needed
+Ensure the bot's role has these permissions:
+- Manage Webhooks
+- Manage Messages
+- Send Messages
+- Attach Files
+- Read Message History
+- View Channels
+
+The bot will automatically create a webhook named ForwardBot in each channel when needed.
+
+
 
 ## How to Use the Bot
 
-(Command Prefix: !) For Any Authorized User:  !on → Turns forwarding ON (bot replies: "Bot is now ON for you!")  
-!off → Turns forwarding OFF (bot replies: "Bot is now OFF for you!")
+Default Command Prefix: "!" (changeable by owner with !setprefix)
 
-After using !on, every message you send that does not start with ! will be instantly deleted and resent as a clean message (with your name, avatar, and attachments). as an App
-For the Owner Only:  !adduser <user_id> → Adds a new user
+**For Any Authorized User**
+
+- !on → Turns forwarding ON
+- !off → Turns forwarding OFF
+- !status → Check your current forwarding status
+- !help → Shows all available commands
+
+After !on, any message not starting with the prefix will be instantly deleted and re-sent as a clean "App" message (with your name, avatar, and attachments).
+
+
+**Owner-Only Commands**
+
+- !adduser <user_id> → Add a user to the authorized list
+- !remove <user_id> → Remove a user from the authorized list
+- !listusers → List all authorized users
+- !setprefix <new_prefix> → Permanently change the command prefix
+
+Example: !setprefix ? → Commands become ?on, ?help, etc.
+Prefix Change persists after restarts.
+
 
 ## Example:  
 
@@ -105,19 +131,14 @@ For the Owner Only:  !adduser <user_id> → Adds a new user
 (Get their user ID: Developer Mode → right-click their name → Copy User ID)
 The bot will confirm the user was added. Added users are saved permanently.
 
-Customization (Optional)
-Change the command prefix by editing this line in main.py:
-```
-bot = commands.Bot(command_prefix='!', intents=intents)
-```
-
-Replace '!' with your preferred prefix (e.g., '.', '~', etc..). 
 
 ## Troubleshooting
 
-Bot not responding? → Check console errors, verify Message Content Intent and token  
-Permission errors? → Double-check bot role/channel permissions  
-Messages not forwarding? → Confirm you used command and are authorized  
-Attachments failing? → Ensure "Attach Files" permission is enabled
+- Bot not responding?  Check console errors, verify Message Content Intent and token
+- Permission errors?  Double-check bot role and channel overrides
+- Messages not forwarding?  Ensure you used !on and are authorized
+- Attachments failing?  Confirm "Attach Files" permission is enabled
+- Prefix not updating?  Only the owner can use !setprefix
+
 
 # Enjoy!
