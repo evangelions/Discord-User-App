@@ -1,7 +1,8 @@
 # Discord-User-App
 
 Script to replace your own messages with an App version of yourself.
-It allows authorized users to send App messages: the bot instantly deletes the original message and resends it via a webhook using the user's exact display name, avatar, and content (including multiple attachments). The result looks like a message sent by an "App" version of you.
+It allows authorized users to send App messages: the bot instantly deletes the original message and resends it via a webhook using the user's exact display name & pfp,
+(including multiple attachments). The result looks like a message sent by an "App" version of you.
 
 
 
@@ -110,7 +111,7 @@ Default Command Prefix: "!" (changeable by owner with !setprefix)
 - !status → Check your current forwarding status
 - !help → Shows all available commands
 
-After !on, any message not starting with the prefix will be instantly deleted and re-sent as a clean "App" message (with your name, avatar, and attachments).
+After !on, any message not starting with the prefix will be instantly deleted and re-sent as a clean "App" message (with your name & pfp)
 
 
 **Owner-Only Commands**
